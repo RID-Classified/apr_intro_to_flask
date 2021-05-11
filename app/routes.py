@@ -18,3 +18,10 @@ def index():
 def register():
     title = 'REGISTER'
     return render_template('register.html', title=title)
+
+
+
+
+
+
+    
