@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+
+{% block content %} 
+
+
+<h3>Login</h3>
+
+<form action="">
+    {{form.hidden_tag() }}
+    <div class = "form-group">
+        <fieldset>
+            {{ form.username.label}}
+            {{ form.password(class = 'form-control', placeholder='Username')}}
+        </fieldset>
+        <fieldset>
+            {{form.password.label}}
+            {{form.password(class='form-control', placeholder='Password')}}
+        </fieldset>
+        {{for.submit(class='btn btn-primary')}}
+        <fieldset>
+            {{ form.username.label}}
+            {{ form.password(class = 'form-control', placeholder='Username')}}
+        </fieldset>
+    </div>
+</form>
+
+{% endblock content}

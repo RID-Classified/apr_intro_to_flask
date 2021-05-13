@@ -38,5 +38,5 @@ def register():
         flash(f'Thank you {username} for registering!', 'success')
         return redirect(url_for('index'))
 
-
+        login_user(user)
     return render_template('register.html', title=title, form=form)
